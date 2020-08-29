@@ -1,0 +1,64 @@
+.side_bar {
+    display: grid;
+    grid-template-areas:
+        "h"
+        "n"
+        "f";
+    grid-template-rows: 2fr 14fr 4fr;
+
+
+    grid-area: sb;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    background-color: lightgray;
+    position: fixed;
+    overflow: auto;
+}
+.helphub{
+    grid-area: h;
+}
+.home{
+    font-weight: bold;
+    font-size: 16px;
+}
+a {
+    display: block;
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+.side_bar a.active {
+    background-color: #4CAF50;
+    color: red;
+}
+.side_bar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+.side_bar button{
+    background-color: white;
+    color: red;
+    border: none;
+    margin: 10px;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 14px;
+    display: inline-flex;
+    justify-content: center;
+}
+.side_bar img {
+    width: 14px;
+}
+.side_bar footer{
+    grid-area: f;
+    border-top-color: black;
+    border: 10px;
+
+}
+.side_bar main{
+    grid-area: n;
+}

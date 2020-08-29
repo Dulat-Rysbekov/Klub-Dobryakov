@@ -1,0 +1,10 @@
+.header {
+    grid-area: h;
+    background-color: white;
+    display: grid;
+    grid-template-areas: mn b s;
+    grid-template-columns: 8fr 1fr 2fr;
+}
+.header img {
+    width: 20px;
+}
